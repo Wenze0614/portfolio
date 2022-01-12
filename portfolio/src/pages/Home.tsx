@@ -5,9 +5,8 @@ export default function Home() {
     return (
         <div className='home'>
             <div className='video-container'>
-                <video autoPlay loop>
-                    <source id="mp4" src="../assets/piano.mp4" type="video/mp4" />
-                    <p>What happened?</p>
+                <video autoPlay loop muted>
+                    <source id="mp4" src={Piano} type="video/mp4" />
                 </video>
             </div>
         </div>

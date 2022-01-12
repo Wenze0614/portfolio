@@ -12,7 +12,7 @@ export default function Home() {
                 </video>
             </div>
             <div className='home-content'>
-                <button onClick={() => setPlay(false)}>Play</button>
+                <button onClick={() => setPlay(play=>!play)}>Play</button>
                 <h2>About Me</h2>
                 <h2>Projects</h2>
             </div>

@@ -1,0 +1,32 @@
+/* .profile-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow:5px 5px 15px 10px gray ;
+} */
+
+.profile-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profile-photo-container{
+    position: relative;
+    width: 40%;
+}
+
+.profile-photo-container img{
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow:5px 5px 15px 3px gray ;
+}
+
+.contact-info{
+
+}

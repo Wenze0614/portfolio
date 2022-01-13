@@ -23,6 +23,7 @@ export default function Home() {
             setVolume(30)
         }
     }
+
     const vid = useRef<HTMLVideoElement>(null)
     useEffect(() => {
         if (vid.current) {
@@ -45,9 +46,9 @@ export default function Home() {
                     <Slider aria-label="Volume" className={play ? "onPlay" : "offPlay"} value={volume} onChange={handleChangeVolume} />
                     <VolumeUp />
                 </Stack>
-                <NavLink to="profile" onClick={() => { setActive(!active) }} className={(NavStatus) => NavStatus.isActive ? 'active' : ''}><h2>About Me</h2></NavLink>
-                <h2>Projects</h2>
-                <h2 onClick={() => { setActive(false);navigate('/') }}>Home</h2>
+                <NavLink to='profile' onClick={()=>{setActive(true)}} className={(NavStatus) => NavStatus.isActive ? 'active' : ''}><h2>About Me</h2></NavLink>
+                <NavLink to='projects' onClick={()=>{setActive(true)}} className={(NavStatus) => NavStatus.isActive ? 'active' : ''}><h2>Projects</h2></NavLink>
+                <NavLink to='/' onClick={()=>{setActive(false)}} className={(NavStatus) => NavStatus.isActive ? 'active' : ''}><h2>Home</h2></NavLink>
             </div>
             <div className={`page-container ${active? "active":""}`}>
                 <Outlet></Outlet>

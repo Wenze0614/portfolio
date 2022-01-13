@@ -91,6 +91,11 @@
 .home-content a{
     text-decoration: none;
 }
+
+.home-content a.active h2{
+    border-bottom: 1px solid tomato !important;
+}
+
 .home-content span{
     transition: all 0.3s ease-in-out;
 }

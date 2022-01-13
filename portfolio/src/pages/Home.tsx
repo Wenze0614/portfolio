@@ -5,7 +5,9 @@ import Stack from '@mui/material/Stack';
 import Slider from '@mui/material/Slider';
 import VolumeDown from '@mui/icons-material/VolumeDown';
 import VolumeUp from '@mui/icons-material/VolumeUp';
+import{NavLink, Outlet, useNavigate} from 'react-router-dom'
 export default function Home() {
+    const navigate = useNavigate()
     const [play, setPlay] = useState(false)
     const [volume, setVolume] = useState(0)
     const [active, setActive] = useState(false)
@@ -43,11 +45,13 @@ export default function Home() {
                     <Slider aria-label="Volume" className={play ? "onPlay" : "offPlay"} value={volume} onChange={handleChangeVolume} />
                     <VolumeUp />
                 </Stack>
-                <h2 onClick={() => { setActive(!active) }} className="">About Me</h2>
+                <NavLink to="profile" onClick={() => { setActive(!active) }} className={(NavStatus) => NavStatus.isActive ? 'active' : ''}><h2>About Me</h2></NavLink>
                 <h2>Projects</h2>
-                <h2 onClick={() => { setActive(false) }}>Home</h2>
+                <h2 onClick={() => { setActive(false);navigate('/') }}>Home</h2>
             </div>
-            <div className={`page-container ${active? "active":""}`}></div>
+            <div className={`page-container ${active? "active":""}`}>
+                <Outlet></Outlet>
+            </div>
         </div>
     )
 }

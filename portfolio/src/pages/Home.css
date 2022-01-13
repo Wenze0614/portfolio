@@ -88,10 +88,13 @@
     border-bottom: 1px solid gray;
 }
 
-
+.home-content a{
+    text-decoration: none;
+}
 .home-content span{
     transition: all 0.3s ease-in-out;
 }
+
 .home-content span.offPlay{
     color:gray !important;
 }

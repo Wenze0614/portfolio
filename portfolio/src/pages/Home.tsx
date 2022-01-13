@@ -43,11 +43,11 @@ export default function Home() {
                     <Slider aria-label="Volume" className={play ? "onPlay" : "offPlay"} value={volume} onChange={handleChangeVolume} />
                     <VolumeUp />
                 </Stack>
-                <h2 onClick={() => { setActive(true) }} className="">About Me</h2>
+                <h2 onClick={() => { setActive(!active) }} className="">About Me</h2>
                 <h2>Projects</h2>
                 <h2 onClick={() => { setActive(false) }}>Home</h2>
             </div>
-            {/* <div className={`profile ${active? "active":""}`}></div> */}
+            <div className={`page-container ${active? "active":""}`}></div>
         </div>
     )
 }

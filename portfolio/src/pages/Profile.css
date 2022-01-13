@@ -17,7 +17,7 @@
 
 .profile-photo-container{
     position: relative;
-    width: 40%;
+    width: 45%;
 }
 
 .profile-photo-container img{
@@ -28,5 +28,31 @@
 }
 
 .contact-info{
+    position: relative;
+    width: 45%;
+    height: auto;
+}
 
+.contact-info h3{
+    font-size: 1.5rem;
+    font-weight: 100;
+    border-bottom: 1px solid silver;
+    text-align: left;
+}
+
+.contact-info h3>span{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-left: 30px;
+    color:rgb(97, 94, 233);
+}
+
+.contact-info p{
+    text-align: left;
+}
+
+.contact-info p>span{
+    color:rgb(97, 94, 233);
+    border-bottom: 1px solid rgb(97, 94, 233);
+    cursor: pointer;
 }

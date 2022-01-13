@@ -1,0 +1,51 @@
+/* .accordion-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    clip-path: circle(0% at 0% 0%);
+}
+
+.accordion-background.active{
+    clip-path: circle(100%);
+} */
+
+.accordion-container{
+    position: relative;
+    border-bottom: 1px solid rgb(97, 94, 233);
+}
+
+.accordion-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(97, 94, 233);
+    clip-path: circle(0% at 0% 0%);
+    transition: all 0.5s ease-in-out;
+}
+
+.accordion-background.active{
+    clip-path: circle(100%);
+}
+.MuiPaper-root{
+    background-color: transparent !important;
+}
+
+#panel1a-header{
+    /* transition:all 0.5s ease-in-out; */
+    background-color: transparent;
+}
+
+/* .Mui-expanded #panel1a-header{
+    background-color: rgb(97, 94, 233);
+} */
+#panel1a-header h3{
+    color:rgb(97, 94, 233);
+    font-weight: 300;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.Mui-expanded #panel1a-header h3{
+    color:white;
+}

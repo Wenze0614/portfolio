@@ -3,11 +3,16 @@ import './Profile.css'
 import profile from '../assets/profile.JPG'
 import Card from '../components/UI/Card'
 import Tooltip from '@mui/material/Tooltip';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import MyAccordion from '../components/UI/MyAccordion';
 export default function Profile() {
     return (
         <div className='profile-container'>
             <Card className='profile-photo-container'>
-                    <img src={profile} alt="myPic"></img>
+                <img src={profile} alt="myPic"></img>
             </Card>
             <Card className='contact-info'>
                 <h3>My Name:<span>Wenze Zhang</span></h3>
@@ -22,6 +27,22 @@ export default function Profile() {
                 <p><Tooltip title="Jump to Skills"><span>Skills</span></Tooltip> lists all the programming languages that I used before</p>
                 <p><Tooltip title="Jump to Education"><span>Education</span></Tooltip> lists all my degrees</p>
                 <p><Tooltip title="Jump to Experiences"><span>Experiences</span></Tooltip> lists all my project experiences</p>
+            </Card>
+            <Card className='profile-detail'>
+                {/* <Accordion className="profile-detail-item">
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <h3>Skills</h3>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                    </AccordionDetails>
+                </Accordion> */}
+                <MyAccordion label="Skills"></MyAccordion>
+                <MyAccordion label="Education"></MyAccordion>
+                <MyAccordion label="Experiences"></MyAccordion>
             </Card>
         </div>
     )

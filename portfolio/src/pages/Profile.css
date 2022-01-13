@@ -1,6 +1,4 @@
-
-
-.profile-container{
+.profile-container {
     position: relative;
     width: 100%;
     height: 100%;
@@ -9,48 +7,97 @@
     overflow: scroll;
 }
 
-.profile-photo-container{
+.profile-photo-container {
     position: relative;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.profile-photo-container img{
+.profile-photo-container img {
     position: relative;
     width: 100%;
     border-radius: 6px;
-    box-shadow:5px 5px 15px 3px gray ;
+    box-shadow: 5px 5px 15px 3px gray;
 }
 
-.contact-info{
+.contact-info {
     position: relative;
     width: 90%;
     height: auto;
 }
 
-.contact-info h3{
+.contact-info h3 {
     font-size: 1.5rem;
     font-weight: 100;
     border-bottom: 1px solid silver;
     text-align: left;
 }
 
-.contact-info h3>span{
+.contact-info h3>span {
     font-size: 2rem;
     font-weight: 300;
     margin-left: 30px;
-    color:rgb(97, 94, 233);
+    color: rgb(97, 94, 233);
 }
 
-.contact-info p{
+.contact-info p {
     text-align: left;
 }
 
-.contact-info p>span{
-    color:rgb(97, 94, 233);
+.contact-info p>span {
+    color: rgb(97, 94, 233);
     border-bottom: 1px solid rgb(97, 94, 233);
     cursor: pointer;
 }
 
-.profile-detail{
+.profile-detail {
     grid-column: 1/3;
+}
+
+@media all and (max-width:1300px) {
+    .profile-container {
+        padding: 10px;
+    }
+    .profile-photo-container {
+        position: relative;
+        height: 30vh;
+        grid-column: 1/3;
+        /* background-color: red; */
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+    .profile-photo-container img {
+        position: relative;
+        width: 40%;
+        clip-path: circle(30% at center);
+        background-color: green;
+    }
+    .contact-info{
+        grid-column: 1/3;
+        width: 100%;
+    }
+
+    .contact-info h3{
+        font-size: 1rem;
+    }
+
+    .contact-info h3>span{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media all and (max-width:400px){
+    .contact-info h3{
+        font-size: 0.7rem;
+    }
+
+    .contact-info h3>span{
+        font-size: 1rem;
+    }
 }

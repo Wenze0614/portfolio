@@ -1,18 +1,9 @@
-/* .profile-container{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    box-shadow:5px 5px 15px 10px gray ;
-} */
+
 
 .profile-container{
     position: relative;
     width: 100%;
     height: 100%;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: 50% 50%;
     overflow: scroll;
@@ -63,17 +54,3 @@
 .profile-detail{
     grid-column: 1/3;
 }
-
-/* .profile-detail-item{
-    color: rgb(97, 94, 233);
-}
-
-.profile-detail-item.Mui-expanded{
-    color: white;
-    background-color: rgb(97, 94, 233);
-} */
-
-/* .item-background{
-    clip-path: circle(0% at 0% 0%);
-    position: absolute;
-} */

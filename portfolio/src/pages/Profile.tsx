@@ -3,10 +3,6 @@ import './Profile.css'
 import profile from '../assets/profile.JPG'
 import Card from '../components/UI/Card'
 import Tooltip from '@mui/material/Tooltip';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MyAccordion from '../components/UI/MyAccordion';
 export default function Profile() {
     return (
@@ -29,17 +25,6 @@ export default function Profile() {
                 <p><Tooltip title="Jump to Experiences"><span>Experiences</span></Tooltip> lists all my project experiences</p>
             </Card>
             <Card className='profile-detail'>
-                {/* <Accordion className="profile-detail-item">
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <h3>Skills</h3>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                    </AccordionDetails>
-                </Accordion> */}
                 <MyAccordion label="Skills"></MyAccordion>
                 <MyAccordion label="Education"></MyAccordion>
                 <MyAccordion label="Experiences"></MyAccordion>

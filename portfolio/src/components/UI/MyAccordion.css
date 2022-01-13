@@ -12,7 +12,10 @@
 
 .accordion-container{
     position: relative;
-    border-bottom: 1px solid rgb(97, 94, 233);
+    /* border-bottom: 1px solid rgb(97, 94, 233); */
+    border-radius: 6px;
+    margin: 10px 0px;
+    border:1px solid rgb(177, 176, 231);
 }
 
 .accordion-background{
@@ -22,6 +25,7 @@
     background-color: rgb(97, 94, 233);
     clip-path: circle(0% at 0% 0%);
     transition: all 0.5s ease-in-out;
+    border-radius: 6px;
 }
 
 .accordion-background.active{

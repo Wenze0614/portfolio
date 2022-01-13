@@ -18,7 +18,7 @@ export default function MyAccordion(props:AccordionProps) {
             <div className={`accordion-background ${active&&"active"}`}></div>
             <Accordion className="accordion-item" onClick={()=>{console.log('clicked');setActive(!active)}}>
                     <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon style={{fill:active?"white":"rgb(97, 94, 233)"}}/>}
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >

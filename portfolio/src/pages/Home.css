@@ -1,57 +1,26 @@
-.home{
+.home {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-.video-container{
+
+.video-container {
     position: absolute;
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-.video-container video{
+.video-container video {
     position: relative;
     height: 100vh;
     width: auto;
 }
-@media (min-width:1500px){
-    .video-container video{
-        width: 100vw;
-        height: auto;
-    }
-}
-@media all and (max-width:1500px){
 
-    h2{
-        font-size: 1.5rem !important;
-    }
-}
-
-@media (max-height:450px){
-    .video-container video{
-        height: auto;
-        width: 100vw;
-    }
-    h2{
-        font-size: 1rem !important;
-    }
-}
-
-@media all and (max-width:400px) {
-
-    .video-container video{
-        transform: rotate(90deg);
-    }
-
-    h2{
-        font-size: 1rem !important;
-    }
-}
-.home-content{
+.home-content {
     position: relative;
     width: 100%;
     height: 100%;
@@ -59,55 +28,64 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease-in-out;
 }
 
-.home-content.active{
+.home-content.active {
     /* align-items: start;
     background-color: rgba(0, 0, 0, 0.3);
     padding-left: 5%; */
     width: 20vw;
     position: absolute;
-    left:0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.3);
 
 }
+.volume-slider{
+    width: 150px;
+}
+.home-content.active svg{
+    display: none;
+}
 
-.home-content h2{
-    color:white;
+.home-content h2 {
+    color: white;
     font-size: 2rem;
     font-weight: 100;
     border-bottom: 1px solid white;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-.home-content h2.onPlay{
+
+.home-content h2.onPlay {
     border-bottom: 1px solid #FD6262;
 }
-.home-content h2.offPlay{
+
+.home-content h2.offPlay {
     border-bottom: 1px solid gray;
 }
 
-.home-content a{
+.home-content a {
     text-decoration: none;
 }
 
-.home-content a.active h2{
+.home-content a.active h2 {
     border-bottom: 1px solid tomato !important;
 }
 
-.home-content span{
+.home-content span {
+    padding: 0;
     transition: all 0.3s ease-in-out;
 }
 
-.home-content span.offPlay{
-    color:gray !important;
-}
-.home-content span.onPlay{
-    color:#FD6262 !important;
+.home-content span.offPlay {
+    color: gray !important;
 }
 
-.page-container{
+.home-content span.onPlay {
+    color: #FD6262 !important;
+}
+
+.page-container {
     position: absolute;
     top: 0;
     right: -100%;
@@ -116,11 +94,85 @@
     height: 100%;
     background-color: white;
     transition: all 0.7s ease-in-out;
-    border-radius: 12px 0px 0px 12px;
+    /* border-radius: 12px 0px 0px 12px; */
 }
 
-.page-container.active{
+.page-container.active {
     right: 0%;
     width: 80vw;
     /* display: block; */
-} 
+}
+
+@media (min-width:1500px) {
+    .video-container video {
+        width: 100vw;
+        height: auto;
+    }
+}
+
+@media all and (max-width:1500px) {
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .home-content.active .volume-slider{
+        width: 100px;
+    }
+}
+
+@media (max-height:450px) {
+    .video-container video {
+        height: auto;
+        width: 100vw;
+    }
+
+    h2 {
+        font-size: 1rem !important;
+    }
+}
+
+@media all and (max-width:400px) {
+
+    .video-container video {
+        transform: rotate(90deg);
+    }
+
+    h2 {
+        font-size: 1rem !important;
+    }
+    .home-content{
+        transition: all 0.3s ease-in-out;
+    }
+    .home-content.active {
+        /* align-items: start;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding-left: 5%; */
+        width: 100vw;
+        height: 20vh;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: grid;
+        grid-template-columns: 40% 40%;
+        padding: 3px;
+    }
+
+    .home-content.active *{
+        margin: 3px;
+    }
+    .page-container {
+        position: absolute;
+        right: 0%;
+        height: 0%;
+        width: 100vw;
+        background-color: white;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .page-container.active {
+        width: 100vw;
+        height: 80vh;
+        /* display: block; */
+    }
+}

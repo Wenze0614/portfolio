@@ -95,7 +95,7 @@ export default function Profile() {
             </Card>
             <Card className='profile-detail'>
                 <MyAccordion label="Skills">
-                    <Card className='profile-detail-section'>
+                    <Card className='profile-detail-section skills-section'>
                         <label>Languages</label>
                         <ul>
                             {Skills.languages.map((item, index) => {
@@ -109,7 +109,7 @@ export default function Profile() {
 
                         </ul>
                     </Card>
-                    <Card className='profile-detail-section'>
+                    <Card className='profile-detail-section skills-section'>
                         <label>Technologies</label>
                         <ul>
                             {Skills.tech.map((item, index) => {

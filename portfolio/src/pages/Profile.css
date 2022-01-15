@@ -61,8 +61,15 @@
     background-color: white;
 }
 
-.profile-detail-section label{
-    font-size: 1.5rem;
+.profile-detail-section.skills-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-detail-section>label{
+    font-size: 1.5rem !important;
 }
 
 .profile-detail-section ul{

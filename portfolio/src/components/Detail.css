@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: start;
     padding: 20px;
+    max-width: 70%;
 }
 
 .profile-detail-section h3 {
@@ -25,8 +26,9 @@
 }
 
 .profile-detail-section p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
+    text-align: start;
 
 }
 
@@ -48,5 +50,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .profile-detail-section p{
+        text-align: center;
     }
 }

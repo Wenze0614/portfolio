@@ -103,7 +103,9 @@ export const Experiences = [
         location:"Perth",
         startDate:"Jul 2021",
         endDate:"Nov 2021",
-        description:""
+        description:"Design website using WIX for not-for-profit charities in WA.",
+        // majorAchievements:["Website design", "SEO theory", "Interaction with clients"]
+    
     },
     {
         name:"Takor Group",
@@ -112,6 +114,50 @@ export const Experiences = [
         location:"Perth",
         startDate:"Mar 2021",
         endDate:"Jul 2021",
+        description:"Participated in the front-end development of a website application called Soar.",
+        // majorAchievements:["TypeScript and ReactJS", "Team workflow with GIT", ""]
+    }
+]
+
+export const Projects = [
+    {
+        name:"Kalina Horse Rescue Website",
+        img:"KHR.PNG",
+        url:"",
+        gitHub:"",
+        tools:"",
+        description:""
+    },
+    {
+        name:"Wenze's Website",
+        img:"MyWeb.PNG",
+        gitHub:"",
+        url:"",
+        tools:"",
+        description:""
+    },
+    {
+        name:"Smart Watering System",
+        img:"waterSystem.PNG",
+        url:"",
+        gitHub:"",
+        tools:"",
+        description:""
+    },
+    {
+        name:"US Mining Accidents Data Analysis",
+        img:"USData.PNG",
+        url:"",
+        gitHub:"",
+        tools:"",
+        description:""
+    },
+    {
+        name:"Car Price Data Analysis and Prediction",
+        img:"carPrice.PNG",
+        url:"",
+        gitHub:"",
+        tools:"",
         description:""
     }
 ]

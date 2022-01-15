@@ -16,11 +16,12 @@ export default function MyAccordion(props:AccordionProps) {
     return (
         <div className={`accordion-container ${props.className? props.className:''}`} >
             <div className={`accordion-background ${active&&"active"}`}></div>
-            <Accordion className="accordion-item" onClick={()=>{console.log('clicked');setActive(!active)}}>
+            <Accordion className="accordion-item" >
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon style={{fill:active?"white":"rgb(97, 94, 233)"}}/>}
                         aria-controls="panel1a-content"
                         id="panel1a-header"
+                        onClick={(e)=>{console.log(e.target);setActive(!active)}}
                     >
                         <h3>{props.label}</h3>
                     </AccordionSummary>

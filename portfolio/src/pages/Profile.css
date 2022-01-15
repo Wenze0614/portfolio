@@ -57,6 +57,24 @@
     grid-column: 1/3;
 }
 
+.profile-detail-section{
+    background-color: white;
+}
+
+.profile-detail-section label{
+    font-size: 1.5rem;
+}
+
+.profile-detail-section ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profile-detail-section ul li{
+    list-style: none;
+    margin: 10px;
+}
 @media all and (max-width:1300px) {
     .profile-container {
         padding: 10px;

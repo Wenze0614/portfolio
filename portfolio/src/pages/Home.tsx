@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 import Slider from '@mui/material/Slider';
 import VolumeDown from '@mui/icons-material/VolumeDown';
 import VolumeUp from '@mui/icons-material/VolumeUp';
-import { NavLink, Outlet, useNavigate } from 'react-router-dom'
+import { NavLink, Outlet} from 'react-router-dom'
 export default function Home() {
     const [play, setPlay] = useState(false)
     const [volume, setVolume] = useState(0)

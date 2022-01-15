@@ -51,6 +51,10 @@ export const Skills = {
             proficiency: 4
         },
         {
+            name:"GraphQL",
+            proficiency:3
+        },
+        {
             name: "AWS",
             proficiency: 3
         },
@@ -124,16 +128,16 @@ export const Projects = [
         name:"Kalina Horse Rescue Website",
         img:"KHR.PNG",
         url:"",
-        gitHub:"",
-        tools:"",
-        description:""
+        gitHub:"https://github.com/Wenze0614/KHR-Web.git",
+        tools:["ReactJS", "TypeScript", "StrapiJS", "AWS", "SendGrid", "Formik", "Yup", "GraphQL", "CSS module", "react pagination", "react router"],
+        description:"This is the website that I am currently building for a horse charity called Kalina Horse Rescue. I used a headless content management system called StrapiJS as the server, which has been deployed to Heroku, and a ReactJS web app for front end. The purpose of this website is to show clients all the horses rehabited in KHR and provide them a way of donating, sponsoring, and adopting, through email plugin and paypal API. "
     },
     {
         name:"Wenze's Website",
         img:"MyWeb.PNG",
         gitHub:"",
         url:"",
-        tools:"",
+        tools:[""],
         description:""
     },
     {
@@ -141,7 +145,7 @@ export const Projects = [
         img:"waterSystem.PNG",
         url:"",
         gitHub:"",
-        tools:"",
+        tools:[""],
         description:""
     },
     {
@@ -149,7 +153,7 @@ export const Projects = [
         img:"USData.PNG",
         url:"",
         gitHub:"",
-        tools:"",
+        tools:[""],
         description:""
     },
     {
@@ -157,7 +161,7 @@ export const Projects = [
         img:"carPrice.PNG",
         url:"",
         gitHub:"",
-        tools:"",
+        tools:[""],
         description:""
     }
 ]

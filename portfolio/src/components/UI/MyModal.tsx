@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import Modal from '@mui/material/Modal';
 import './MyModal.css'
-export default function MyModal(props: { open: boolean, handleClose: () => void, children: ReactNode }) {
+export default function MyModal(props: { open: boolean, handleClose: () => void, children: ReactNode, className?:string }) {
     return (
         <Modal
             open={props.open}
@@ -9,9 +9,9 @@ export default function MyModal(props: { open: boolean, handleClose: () => void,
             onClose={props.handleClose}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
-            className='modal'
+            className={`modal`}
         >
-            <div className='modal-content'>
+            <div className={`modal-content ${props.className}`}>
                 {props.children}
             </div>
         </Modal>

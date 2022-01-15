@@ -74,14 +74,21 @@ export const Educations = {
                 startDate: "Jul 2021",
                 endDate: "Present",
                 WAM:"81.5",
-                GPA:"6.750"
+                GPA:"6.750",
+                academicTranscript:[
+                    "master.PNG"
+                ]
             },
             {
                 name: "Bachelor of Computer Science",
                 startDate: "Jul 2018",
                 endDate: "Jun 2021",
                 WAM:"75.6",
-                GPA:"6.067"
+                GPA:"6.067",
+                academicTranscript:[
+                    "bachelor-1.PNG",
+                    "bachelor-2.PNG"
+                ]
             }
         ]
     }

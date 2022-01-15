@@ -135,7 +135,7 @@ export default function Profile() {
                             endDate={item.endDate}
                             WAM={item.WAM}
                             GPA={item.GPA}
-                            academicTranscript='' ></Degree>)
+                            academicTranscript={item.academicTranscript} ></Degree>)
                     })}
                 </MyAccordion>
                 <MyAccordion label="Experiences"></MyAccordion>

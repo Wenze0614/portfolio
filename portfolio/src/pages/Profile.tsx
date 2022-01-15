@@ -5,7 +5,8 @@ import Card from '../components/UI/Card'
 import Tooltip from '@mui/material/Tooltip';
 import MyAccordion from '../components/UI/MyAccordion';
 import Rating from '@mui/material/Rating';
-import { Skills } from '../Data';
+import { Skills, Educations } from '../Data';
+import Degree from '../components/Degree';
 // const skills = {
 //     languages: [
 //         {
@@ -97,11 +98,11 @@ export default function Profile() {
                     <Card className='profile-detail-section'>
                         <label>Languages</label>
                         <ul>
-                            {Skills.languages.map((item,index) => {
+                            {Skills.languages.map((item, index) => {
                                 return (
                                     <li key={index}>
                                         <h3>{item.name}</h3>
-                                        <Rating name="read-only" value={item.proficiency} style={{color:"rgb(97, 94, 233)"}} readOnly />
+                                        <Rating name="read-only" value={item.proficiency} style={{ color: "rgb(97, 94, 233)" }} readOnly />
                                     </li>
                                 )
                             })}
@@ -111,11 +112,11 @@ export default function Profile() {
                     <Card className='profile-detail-section'>
                         <label>Technologies</label>
                         <ul>
-                            {Skills.tech.map((item,index) => {
+                            {Skills.tech.map((item, index) => {
                                 return (
                                     <li key={index}>
                                         <h3>{item.name}</h3>
-                                        <Rating name="read-only" value={item.proficiency} style={{color:"rgb(97, 94, 233)"}} readOnly />
+                                        <Rating name="read-only" value={item.proficiency} style={{ color: "rgb(97, 94, 233)" }} readOnly />
                                     </li>
                                 )
                             })}
@@ -124,7 +125,18 @@ export default function Profile() {
                     </Card>
                 </MyAccordion>
                 <MyAccordion label="Education">
-                    
+                    {Educations.uwa.degrees.map((item, index) => {
+                        return(
+                        <Degree
+                            key={index}
+                            name={item.name}
+                            school={Educations.uwa.name}
+                            startDate={item.startDate}
+                            endDate={item.endDate}
+                            WAM={item.WAM}
+                            GPA={item.GPA}
+                            academicTranscript='' ></Degree>)
+                    })}
                 </MyAccordion>
                 <MyAccordion label="Experiences"></MyAccordion>
             </Card>

@@ -1,0 +1,52 @@
+.profile-detail-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.profile-detail-section section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px;
+}
+
+.profile-detail-section h3 {
+    font-size: 1.3rem;
+    font-weight: 1000;
+    border-bottom: 1px solid silver;
+}
+
+.profile-detail-section label {
+    font-size: 1rem;
+    font-weight: 300;
+    color: silver;
+}
+
+.profile-detail-section p {
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.profile-detail-section p span {
+    font-size: 1.2rem;
+    font-weight: 1000;
+}
+
+@media (max-width:1300px) {
+    .profile-detail-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-detail-section section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

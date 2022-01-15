@@ -33,34 +33,57 @@ export const Skills = {
             proficiency: 2
         }
     ],
-    tech:[
+    tech: [
         {
-            name:"ReactJS",
-            proficiency:5
+            name: "ReactJS",
+            proficiency: 5
         },
         {
-            name:"GIT",
-            proficiency:5
+            name: "GIT",
+            proficiency: 5
         },
         {
-            name:"StrapiJS",
-            proficiency:5
+            name: "StrapiJS",
+            proficiency: 5
         },
         {
-            name:"Power BI",
-            proficiency:4
+            name: "Power BI",
+            proficiency: 4
         },
         {
-            name:"AWS",
-            proficiency:3
+            name: "AWS",
+            proficiency: 3
         },
         {
-            name:"MySQL",
-            proficiency:3
+            name: "MySQL",
+            proficiency: 3
         },
         {
-            name:"Flask",
-            proficiency:2
+            name: "Flask",
+            proficiency: 2
         },
     ]
+}
+
+export const Educations = {
+    uwa: {
+        name: "The University of Western Australia",
+        degrees: [
+            {
+                name: "Master of Information Technology",
+                startDate: "Jul 2021",
+                endDate: "Present",
+                WAM:"81.5",
+                GPA:"6.750"
+            },
+            {
+                name: "Bachelor of Computer Science",
+                startDate: "Jul 2018",
+                endDate: "Jun 2021",
+                WAM:"75.6",
+                GPA:"6.067"
+            }
+        ]
+    }
+
 }

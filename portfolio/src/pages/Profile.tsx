@@ -5,72 +5,73 @@ import Card from '../components/UI/Card'
 import Tooltip from '@mui/material/Tooltip';
 import MyAccordion from '../components/UI/MyAccordion';
 import Rating from '@mui/material/Rating';
-const skills = {
-    languages: [
-        {
-            name: "Javascript",
-            proficiency: 5
-        },
-        {
-            name: "Typescript",
-            proficiency: 5
-        },
-        {
-            name: "HTML",
-            proficiency: 4
-        },
-        {
-            name: "CSS",
-            proficiency: 4
-        },
-        {
-            name: "Python",
-            proficiency: 3
-        },
-        {
-            name: "R",
-            proficiency: 3
-        },
-        {
-            name: "Java",
-            proficiency: 2
-        },
-        {
-            name: "C",
-            proficiency: 2
-        }
-    ],
-    tech:[
-        {
-            name:"ReactJS",
-            proficiency:5
-        },
-        {
-            name:"GIT",
-            proficiency:5
-        },
-        {
-            name:"StrapiJS",
-            proficiency:5
-        },
-        {
-            name:"Power BI",
-            proficiency:4
-        },
-        {
-            name:"AWS",
-            proficiency:3
-        },
-        {
-            name:"MySQL",
-            proficiency:3
-        },
-        {
-            name:"Flask",
-            proficiency:2
-        },
-    ]
-}
+import { Skills } from '../Data';
+// const skills = {
+//     languages: [
+//         {
+//             name: "Javascript",
+//             proficiency: 5
+//         },
+//         {
+//             name: "Typescript",
+//             proficiency: 5
+//         },
+//         {
+//             name: "HTML",
+//             proficiency: 4
+//         },
+//         {
+//             name: "CSS",
+//             proficiency: 4
+//         },
+//         {
+//             name: "Python",
+//             proficiency: 3
+//         },
+//         {
+//             name: "R",
+//             proficiency: 3
+//         },
+//         {
+//             name: "Java",
+//             proficiency: 2
+//         },
+//         {
+//             name: "C",
+//             proficiency: 2
+//         }
+//     ],
+//     tech:[
+//         {
+//             name:"ReactJS",
+//             proficiency:5
+//         },
+//         {
+//             name:"GIT",
+//             proficiency:5
+//         },
+//         {
+//             name:"StrapiJS",
+//             proficiency:5
+//         },
+//         {
+//             name:"Power BI",
+//             proficiency:4
+//         },
+//         {
+//             name:"AWS",
+//             proficiency:3
+//         },
+//         {
+//             name:"MySQL",
+//             proficiency:3
+//         },
+//         {
+//             name:"Flask",
+//             proficiency:2
+//         },
+//     ]
+// }
 export default function Profile() {
     return (
         <div className='profile-container'>
@@ -94,11 +95,11 @@ export default function Profile() {
             <Card className='profile-detail'>
                 <MyAccordion label="Skills">
                     <Card className='profile-detail-section'>
-                        <label>Programming Languages</label>
+                        <label>Languages</label>
                         <ul>
-                            {skills.languages.map(item => {
+                            {Skills.languages.map((item,index) => {
                                 return (
-                                    <li>
+                                    <li key={index}>
                                         <h3>{item.name}</h3>
                                         <Rating name="read-only" value={item.proficiency} style={{color:"rgb(97, 94, 233)"}} readOnly />
                                     </li>
@@ -110,9 +111,9 @@ export default function Profile() {
                     <Card className='profile-detail-section'>
                         <label>Technologies</label>
                         <ul>
-                            {skills.tech.map(item => {
+                            {Skills.tech.map((item,index) => {
                                 return (
-                                    <li>
+                                    <li key={index}>
                                         <h3>{item.name}</h3>
                                         <Rating name="read-only" value={item.proficiency} style={{color:"rgb(97, 94, 233)"}} readOnly />
                                     </li>
@@ -122,7 +123,9 @@ export default function Profile() {
                         </ul>
                     </Card>
                 </MyAccordion>
-                <MyAccordion label="Education"></MyAccordion>
+                <MyAccordion label="Education">
+                    
+                </MyAccordion>
                 <MyAccordion label="Experiences"></MyAccordion>
             </Card>
         </div>

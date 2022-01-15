@@ -1,4 +1,4 @@
-import React,{ReactNode} from 'react'
+import {ReactNode} from 'react'
 import './Card.css'
 export default function Card(props:{children:ReactNode,className?:string}) {
     return (

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Card from './UI/Card'
 import Button from '@mui/material/Button';
 import "./Detail.css"

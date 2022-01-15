@@ -31,9 +31,6 @@
 }
 
 .home-content.active {
-    /* align-items: start;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding-left: 5%; */
     width: 20vw;
     position: absolute;
     left: 0;

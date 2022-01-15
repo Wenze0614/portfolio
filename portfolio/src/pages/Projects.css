@@ -15,7 +15,7 @@
     margin: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
     color: white;
     background-color: white !important;
@@ -97,7 +97,7 @@
 .project-detail-content .tools .tool-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
 }
 .tool-list li{
     margin-right: 30px;

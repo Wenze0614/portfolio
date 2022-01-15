@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 import Modal from '@mui/material/Modal';
 import './MyModal.css'
 export default function MyModal(props: { open: boolean, handleClose: () => void, children: ReactNode, className?:string }) {

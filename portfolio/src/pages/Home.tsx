@@ -1,15 +1,12 @@
 import './Home.css'
 import Piano from "../assets/piano.mp4"
-import profile from '../assets/profile.JPG'
 import { useState, useRef, useEffect } from 'react'
 import Stack from '@mui/material/Stack';
 import Slider from '@mui/material/Slider';
 import VolumeDown from '@mui/icons-material/VolumeDown';
 import VolumeUp from '@mui/icons-material/VolumeUp';
-import Avatar from '@mui/material/Avatar';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 export default function Home() {
-    const navigate = useNavigate()
     const [play, setPlay] = useState(false)
     const [volume, setVolume] = useState(0)
     const [active, setActive] = useState(false)

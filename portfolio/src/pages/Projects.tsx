@@ -49,14 +49,11 @@ export default function Projects() {
                     <img src={require(`../assets/${selected?.img}`)} alt="project img"></img>
                 </div>
                 <div className='project-detail-content'>
-                    <section>
-                        <label>Introduction</label>
-                        <p>{selected?.description}</p>
-                    </section>
+
                     <section className='project-info'>
                         <h2>{selected?.name}</h2>
                         {selected?.gitHub ? <label>GitHub: <a href={selected.gitHub} target={'_blank'} rel="noreferrer">{selected.gitHub}</a></label> : null}
-                        {selected?.url ? <><label>URL: </label><a href={selected.url} target={'_blank'} rel="noreferrer">{selected.url}</a></>: null}
+                        {selected?.url ? <><label>URL: </label><a href={selected.url} target={'_blank'} rel="noreferrer">{selected.url}</a></> : null}
                         <div className='tools'>
 
                             <label>What's used in this project</label>
@@ -69,6 +66,10 @@ export default function Projects() {
                                 })}
                             </ul>
                         </div>
+                    </section>
+                    <section>
+                        <label>Introduction</label>
+                        <p>{selected?.description}</p>
                     </section>
                 </div>
             </MyModal> : <></>

@@ -5,8 +5,8 @@ import Card from '../components/UI/Card'
 import Tooltip from '@mui/material/Tooltip';
 import MyAccordion from '../components/UI/MyAccordion';
 import Rating from '@mui/material/Rating';
-import { Skills, Educations } from '../Data';
-import Degree from '../components/Degree';
+import { Skills, Educations, Experiences } from '../Data';
+import Detail from '../components/Detail';
 // const skills = {
 //     languages: [
 //         {
@@ -126,19 +126,36 @@ export default function Profile() {
                 </MyAccordion>
                 <MyAccordion label="Education">
                     {Educations.uwa.degrees.map((item, index) => {
-                        return(
-                        <Degree
-                            key={index}
-                            name={item.name}
-                            school={Educations.uwa.name}
-                            startDate={item.startDate}
-                            endDate={item.endDate}
-                            WAM={item.WAM}
-                            GPA={item.GPA}
-                            academicTranscript={item.academicTranscript} ></Degree>)
+                        return (
+                            <Detail
+                                key={index}
+                                type="degree"
+                                name={item.name}
+                                school={Educations.uwa.name}
+                                startDate={item.startDate}
+                                endDate={item.endDate}
+                                WAM={item.WAM}
+                                GPA={item.GPA}
+                                academicTranscript={item.academicTranscript} ></Detail>)
                     })}
                 </MyAccordion>
-                <MyAccordion label="Experiences"></MyAccordion>
+                <MyAccordion label="Experiences">
+                    {Experiences.map((item, index) => {
+                        return (
+                            <Detail
+                                key={index}
+                                type="experience"
+                                name={item.name}
+                                position={item.position}
+                                experienceType={item.experienceType}
+                                location={item.location}
+                                startDate={item.startDate}
+                                endDate={item.endDate}
+                                description={item.description}
+                                ></Detail>
+                        )
+                    })}
+                </MyAccordion>
             </Card>
         </div>
     )

@@ -1,14 +1,17 @@
 .modal{
     position: relative;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: auto;
 }
 
 .modal-content{
     position: relative;
-    width: 80%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -18,7 +21,9 @@
     border: 1px solid white;
 }
 
-.modal-content img{
+.modal img{
     position: relative;
-    width: 90%;
+    max-width: 80vw;
+    max-height:50vh;
+    object-fit: contain;
 }

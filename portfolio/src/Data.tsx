@@ -94,3 +94,24 @@ export const Educations = {
     }
 
 }
+
+export const Experiences = [
+    {
+        name:"Sites4Good",
+        position:"Website Designer",
+        experienceType:"volunteer",
+        location:"Perth",
+        startDate:"Jul 2021",
+        endDate:"Nov 2021",
+        description:""
+    },
+    {
+        name:"Takor Group",
+        position:"Front-end Developer",
+        experienceType:"Intern",
+        location:"Perth",
+        startDate:"Mar 2021",
+        endDate:"Jul 2021",
+        description:""
+    }
+]

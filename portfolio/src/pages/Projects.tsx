@@ -53,9 +53,10 @@ export default function Projects() {
                         <label>Introduction</label>
                         <p>{selected?.description}</p>
                     </section>
-                    <section>
+                    <section className='project-info'>
                         <h2>{selected?.name}</h2>
                         {selected?.gitHub ? <label>GitHub: <a href={selected.gitHub} target={'_blank'} rel="noreferrer">{selected.gitHub}</a></label> : null}
+                        {selected?.url ? <><label>URL: </label><a href={selected.url} target={'_blank'} rel="noreferrer">{selected.url}</a></>: null}
                         <div className='tools'>
 
                             <label>What's used in this project</label>

@@ -45,16 +45,20 @@
     min-width: 70vw;
     max-width: 80vw;
     max-height: 90vh;
-    padding: 0px 20px;
+    padding: 20px 20px;
     /* align-items: baseline; */
 }
 .project-detail .img-wrapper{
-
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 
 }
 .project-detail img{
-
-
+    border-radius: 6px;
 }
 
 .project-detail .project-detail-content{
@@ -69,6 +73,10 @@
 }
 .project-detail-content section{
     padding:0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
 }
 .project-detail-content label{
     font-size: 1.2rem;
@@ -77,10 +85,12 @@
 .project-detail-content a{
     font-size: 1rem;
     text-decoration: none;
-    background-color: rgb(97, 94, 233);
-    color:white;
+    /* background-color: rgb(97, 94, 233); */
+    background-color: white;
+    color:rgb(97, 94, 233);
     border-radius: 6px;
     padding:0px 3px;
+    transition: all 0.3s ease-in-out;
 }
 
 .project-detail-content .tools .tool-list{
@@ -90,6 +100,15 @@
 }
 .tool-list li{
     margin-right: 30px;
+}
+
+.project-info{
+    background-color:rgb(97, 94, 233) ;
+    color: white;
+    border-radius: 6px;
+}
+.project-info *{
+    margin-bottom: 10px;
 }
 @media (max-height:500px) {
     .project-item button{

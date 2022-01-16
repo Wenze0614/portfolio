@@ -136,7 +136,7 @@ export const Projects = [
         name:"Wenze's Website",
         img:"MyWeb.PNG",
         gitHub:"https://github.com/Wenze0614/portfolio.git",
-        url:"https://wenze0614.com",
+        url:"https://wenze0614.netlify.com",
         tools:["ReactJS","TypeScript", "Material UI"],
         description:"The first website for myself, which contains my information and projects. This website is built with ReactJS and Typescript. Currently it is a static website with only react. Later on I will set up a NodeJS server to connect to."
     },

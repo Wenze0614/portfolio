@@ -2,77 +2,11 @@
 import './Profile.css'
 import profile from '../assets/profile.JPG'
 import Card from '../components/UI/Card'
-import Tooltip from '@mui/material/Tooltip';
 import MyAccordion from '../components/UI/MyAccordion';
 import Rating from '@mui/material/Rating';
 import { Skills, Educations, Experiences } from '../Data';
 import Detail from '../components/Detail';
-// const skills = {
-//     languages: [
-//         {
-//             name: "Javascript",
-//             proficiency: 5
-//         },
-//         {
-//             name: "Typescript",
-//             proficiency: 5
-//         },
-//         {
-//             name: "HTML",
-//             proficiency: 4
-//         },
-//         {
-//             name: "CSS",
-//             proficiency: 4
-//         },
-//         {
-//             name: "Python",
-//             proficiency: 3
-//         },
-//         {
-//             name: "R",
-//             proficiency: 3
-//         },
-//         {
-//             name: "Java",
-//             proficiency: 2
-//         },
-//         {
-//             name: "C",
-//             proficiency: 2
-//         }
-//     ],
-//     tech:[
-//         {
-//             name:"ReactJS",
-//             proficiency:5
-//         },
-//         {
-//             name:"GIT",
-//             proficiency:5
-//         },
-//         {
-//             name:"StrapiJS",
-//             proficiency:5
-//         },
-//         {
-//             name:"Power BI",
-//             proficiency:4
-//         },
-//         {
-//             name:"AWS",
-//             proficiency:3
-//         },
-//         {
-//             name:"MySQL",
-//             proficiency:3
-//         },
-//         {
-//             name:"Flask",
-//             proficiency:2
-//         },
-//     ]
-// }
+
 export default function Profile() {
     return (
         <div className='profile-container'>
@@ -89,12 +23,12 @@ export default function Profile() {
                 <h3>Email:<span>wenze0614@gmail.com</span></h3>
                 <p>Hi! This is Wenze. Welcome to my website!</p>
                 <p>This profile contains the following sections: Skills, Education, Experiences</p>
-                <p><Tooltip title="Jump to Skills"><span>Skills</span></Tooltip> lists all the programming languages that I used before</p>
-                <p><Tooltip title="Jump to Education"><span>Education</span></Tooltip> lists all my degrees</p>
-                <p><Tooltip title="Jump to Experiences"><span>Experiences</span></Tooltip> lists all my project experiences</p>
+                <p><span>Skills</span> lists all the programming languages and other techs that I used before</p>
+                <p><span>Education</span> lists all my degrees</p>
+                <p><span>Experiences</span> lists all my work, internship and volunteer experiences</p>
             </Card>
             <Card className='profile-detail'>
-                <MyAccordion label="Skills">
+                <MyAccordion label="Skills" id="skills">
                     <Card className='profile-detail-section skills-section'>
                         <label>Languages</label>
                         <ul>
@@ -124,7 +58,7 @@ export default function Profile() {
                         </ul>
                     </Card>
                 </MyAccordion>
-                <MyAccordion label="Education">
+                <MyAccordion label="Education" id="education">
                     {Educations.uwa.degrees.map((item, index) => {
                         return (
                             <Detail
@@ -139,7 +73,7 @@ export default function Profile() {
                                 academicTranscript={item.academicTranscript} ></Detail>)
                     })}
                 </MyAccordion>
-                <MyAccordion label="Experiences">
+                <MyAccordion label="Experiences" id="experiences">
                     {Experiences.map((item, index) => {
                         return (
                             <Detail

@@ -49,8 +49,6 @@
 
 .contact-info p>span {
     color: rgb(97, 94, 233);
-    border-bottom: 1px solid rgb(97, 94, 233);
-    cursor: pointer;
 }
 
 .profile-detail {

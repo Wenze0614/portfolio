@@ -9,12 +9,13 @@ type AccordionProps = {
     fillColor?:string,
     className?:string,
     label?:string,
-    children?:ReactNode
+    children?:ReactNode,
+    id?:string
 }
 export default function MyAccordion(props:AccordionProps) {
     const [active, setActive] = useState(false)
     return (
-        <div className={`accordion-container ${props.className? props.className:''}`} >
+        <div className={`accordion-container ${props.className? props.className:''}`} id={props.id} >
             <div className={`accordion-background ${active&&"active"}`}></div>
             <Accordion className="accordion-item" >
                     <AccordionSummary

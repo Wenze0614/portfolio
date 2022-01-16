@@ -1,13 +1,13 @@
 .home {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
 .video-container {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
 
 .video-container video {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: auto;
     object-fit: cover;
 }
@@ -32,7 +32,7 @@
 }
 
 .home-content.active {
-    width: 20vw;
+    width: 20%;
     position: absolute;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
@@ -87,27 +87,22 @@
     position: absolute;
     top: 0;
     right: -100%;
-    /* right: 0%; */
     width: 0;
     height: 100%;
     background-color: white;
     transition: all 0.7s ease-in-out;
-    /* border-radius: 12px 0px 0px 12px; */
 }
 
 .page-container.active {
     right: 0%;
-    width: 80vw;
+    width: 80%;
     padding: 20px;
-    /* display: block; */
 }
 
 @media (min-width:1500px) {
     .video-container video {
-        /* width: 100vw;
-        height: auto; */
-        /* height: 100vh;
-        width: auto; */
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -135,8 +130,8 @@
         transition: all 0.3s ease-in-out;
     }
     .home-content.active {
-        width: 100vw;
-        height: 20vh;
+        width: 100%;
+        height: 20%;
         position: absolute;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.3);
@@ -152,22 +147,21 @@
         position: absolute;
         right: 0%;
         height: 0%;
-        width: 100vw;
+        width: 100%;
         background-color: white;
         transition: all 0.7s ease-in-out;
     }
 
     .page-container.active {
-        width: 100vw;
-        height: 80vh;
-        /* display: block; */
+        width: 100%;
+        height: 80%;
     }
 }
 
 @media (max-height:450px) {
     .video-container video {
         height: auto;
-        width: 100vw;
+        width: 100%;
     }
 
     h2 {

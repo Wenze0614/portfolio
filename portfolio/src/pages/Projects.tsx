@@ -44,33 +44,35 @@ export default function Projects() {
                         </CardActions>
                     </Card>)
             })}
-            {active ? <MyModal open={active} handleClose={() => { setActive(false) }} className="project-detail">
-                <div className='img-wrapper'>
-                    <img src={require(`../assets/${selected?.img}`)} alt="project img"></img>
-                </div>
-                <div className='project-detail-content'>
+            {active ? <MyModal open={active} handleClose={() => { setActive(false) }} >
+                <div className="project-detail">
+                    <div className='img-wrapper'>
+                        <img src={require(`../assets/${selected?.img}`)} alt="project img"></img>
+                    </div>
+                    <div className='project-detail-content'>
 
-                    <section className='project-info'>
-                        <h2>{selected?.name}</h2>
-                        {selected?.gitHub ? <label>GitHub: <a href={selected.gitHub} target={'_blank'} rel="noreferrer">{selected.gitHub}</a></label> : null}
-                        {selected?.url ? <><label>URL: </label><a href={selected.url} target={'_blank'} rel="noreferrer">{selected.url}</a></> : null}
-                        <div className='tools'>
+                        <section className='project-info'>
+                            <h2>{selected?.name}</h2>
+                            {selected?.gitHub ? <label>GitHub: <a href={selected.gitHub} target={'_blank'} rel="noreferrer">{selected.gitHub}</a></label> : null}
+                            {selected?.url ? <><label>URL: </label><a href={selected.url} target={'_blank'} rel="noreferrer">{selected.url}</a></> : null}
+                            <div className='tools'>
 
-                            <label>What's used in this project</label>
-                            <ul className='tool-list'>
-                                {selected?.tools.map((item, index) => {
-                                    return (
-                                        <li key={index}>
-                                            {item}
-                                        </li>)
-                                })}
-                            </ul>
-                        </div>
-                    </section>
-                    <section>
-                        <label>Introduction</label>
-                        <p>{selected?.description}</p>
-                    </section>
+                                <label>What's used in this project</label>
+                                <ul className='tool-list'>
+                                    {selected?.tools.map((item, index) => {
+                                        return (
+                                            <li key={index}>
+                                                {item}
+                                            </li>)
+                                    })}
+                                </ul>
+                            </div>
+                        </section>
+                        <section>
+                            <label>Introduction</label>
+                            <p>{selected?.description}</p>
+                        </section>
+                    </div>
                 </div>
             </MyModal> : <></>
             }

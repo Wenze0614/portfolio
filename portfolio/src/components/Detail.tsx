@@ -47,7 +47,7 @@ export default function Detail(props: DegreeProps | ExperiencesProps) {
                 </section>
                 <section>
                     <h3>{props.startDate} - {props.endDate}</h3>
-                    <Button variant="outlined" onClick={() => { setOpen(true) }}>Academic Transcript</Button>
+                    {/* <Button variant="outlined" onClick={() => { setOpen(true) }}>Academic Transcript</Button> */}
                 </section>
             </>) : (<>
                 <section>

@@ -6,6 +6,7 @@ import MyAccordion from '../components/UI/MyAccordion';
 import Rating from '@mui/material/Rating';
 import { Skills, Educations, Experiences } from '../Data';
 import Detail from '../components/Detail';
+import SkillSection from '../components/SkillSection';
 
 export default function Profile() {
     return (
@@ -23,40 +24,17 @@ export default function Profile() {
                 <h3>Email:<span>wenze0614@gmail.com</span></h3>
                 <p>Hi! This is Wenze. Welcome to my website!</p>
                 <p>This profile contains the following sections: Skills, Education, Experiences</p>
-                <p><span>Skills</span> lists all the programming languages and other techs that I used before</p>
+                <p><span>Skills</span> lists all the programming languages and other techs that I am familiar with and have used before</p>
                 <p><span>Education</span> lists all my degrees</p>
                 <p><span>Experiences</span> lists all my work, internship and volunteer experiences</p>
             </Card>
             <Card className='profile-detail'>
                 <MyAccordion label="Skills" id="skills">
-                    <Card className='profile-detail-section skills-section'>
-                        <label>Languages</label>
-                        <ul>
-                            {Skills.languages.map((item, index) => {
-                                return (
-                                    <li key={index}>
-                                        <h3>{item.name}</h3>
-                                        <Rating name="read-only" value={item.proficiency} style={{ color: "rgb(97, 94, 233)" }} readOnly />
-                                    </li>
-                                )
-                            })}
-
-                        </ul>
-                    </Card>
-                    <Card className='profile-detail-section skills-section'>
-                        <label>Technologies</label>
-                        <ul>
-                            {Skills.tech.map((item, index) => {
-                                return (
-                                    <li key={index}>
-                                        <h3>{item.name}</h3>
-                                        <Rating name="read-only" value={item.proficiency} style={{ color: "rgb(97, 94, 233)" }} readOnly />
-                                    </li>
-                                )
-                            })}
-
-                        </ul>
-                    </Card>
+                    <SkillSection name="Front End" dataName='FrontEnd'></SkillSection>
+                    <SkillSection name="Back End" dataName='BackEnd'></SkillSection>
+                    <SkillSection name="Cloud Web Dev" dataName='Cloud'></SkillSection>
+                    <SkillSection name="Other Languages" dataName='OtherLanguages'></SkillSection>
+                    <SkillSection name="Others" dataName='OtherTech'></SkillSection>
                 </MyAccordion>
                 <MyAccordion label="Education" id="education">
                     {Educations.uwa.degrees.map((item, index) => {

@@ -1,11 +1,15 @@
 export const Skills = {
-    languages: [
+    FrontEnd:[
         {
-            name: "Javascript",
+            name: "ReactJS",
             proficiency: 5
         },
         {
             name: "Typescript",
+            proficiency: 5
+        },
+        {
+            name: "Javascript",
             proficiency: 5
         },
         {
@@ -15,7 +19,42 @@ export const Skills = {
         {
             name: "CSS",
             proficiency: 4
+        }
+    ],
+    BackEnd:[
+        {
+            name:"NodeJS & Express",
+            proficiency:4
         },
+        {
+            name: "Flask",
+            proficiency: 4
+        },
+
+    ],
+    Cloud:[
+        {
+            name:"AWS API Gateway",
+            proficiency:4
+        },
+        {
+            name:"AWS Lambda",
+            proficiency:3
+        },
+        {
+            name:"AWS DynamoDB",
+            proficiency:3
+        },
+        {
+            name:"AWS S3",
+            proficiency:3
+        },
+        {
+            name:"AWS Cognito",
+            proficiency:2
+        }
+    ],
+    OtherLanguages: [
         {
             name: "Python",
             proficiency: 3
@@ -33,11 +72,7 @@ export const Skills = {
             proficiency: 2
         }
     ],
-    tech: [
-        {
-            name: "ReactJS",
-            proficiency: 5
-        },
+    OtherTech: [
         {
             name: "GIT",
             proficiency: 5
@@ -55,16 +90,8 @@ export const Skills = {
             proficiency:3
         },
         {
-            name: "AWS",
-            proficiency: 3
-        },
-        {
             name: "MySQL",
             proficiency: 3
-        },
-        {
-            name: "Flask",
-            proficiency: 2
         },
     ]
 }
@@ -101,24 +128,34 @@ export const Educations = {
 
 export const Experiences = [
     {
+
+        name:"Children's University",
+        position:"application developer",
+        experienceType:"Internship",
+        location:"Perth",
+        startDate:"Jun 2022",
+        endDate:"Jul 2022",
+        description:"Developed a mobile map application using google AppSheet"
+    },
+    {
         name:"Sites4Good",
         position:"Website Designer",
         experienceType:"volunteer",
         location:"Perth",
         startDate:"Jul 2021",
         endDate:"Nov 2021",
-        description:"Design website using WIX for not-for-profit charities in WA.",
+        description:"Designed a website using WIX for a charity in WA.",
         // majorAchievements:["Website design", "SEO theory", "Interaction with clients"]
     
     },
     {
         name:"Takor Group",
         position:"Front-end Developer",
-        experienceType:"Intern",
+        experienceType:"Internship",
         location:"Perth",
         startDate:"Mar 2021",
         endDate:"Jul 2021",
-        description:"Participated in the front-end development of a website application called Soar.",
+        description:"Participated in the front-end development of a website application",
         // majorAchievements:["TypeScript and ReactJS", "Team workflow with GIT", ""]
     }
 ]

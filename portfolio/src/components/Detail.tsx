@@ -1,6 +1,6 @@
 
 import Card from './UI/Card'
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import "./Detail.css"
 import MyModal from './UI/MyModal';
 import { useState } from 'react';

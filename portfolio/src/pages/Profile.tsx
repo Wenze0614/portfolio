@@ -3,8 +3,8 @@ import './Profile.css'
 import profile from '../assets/profile.JPG'
 import Card from '../components/UI/Card'
 import MyAccordion from '../components/UI/MyAccordion';
-import Rating from '@mui/material/Rating';
-import { Skills, Educations, Experiences } from '../Data';
+// import Rating from '@mui/material/Rating';
+import {  Educations, Experiences } from '../Data';
 import Detail from '../components/Detail';
 import SkillSection from '../components/SkillSection';
 
